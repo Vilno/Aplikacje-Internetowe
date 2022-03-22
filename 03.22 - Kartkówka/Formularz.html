@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>Podaj liczbę: <input type="text" id="number"></p>
+        <input type="button" id="przycisk" value="Zatwierdź"><br><br>
+        <script>
+            przycisk.addEventListener("click", liczba);
+			function liczba()
+			{
+				var number=document.getElementById("number").value;
+				document.getElementById("liczba").innerHTML=number;
+            };
+        </script>
+        Twoja liczba to: 
+        <p id="liczba"> ...</p>
+</body>
+</html>
